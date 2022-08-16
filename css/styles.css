@@ -58,6 +58,7 @@ nav {
 
 /* Empiezan los bodys */
 
+/*Etiquetas GENERALES para el body*/
 body {
     margin: 0;
     display: inline;
@@ -79,7 +80,7 @@ body img:hover{
     1px 1px 10px #ffff;
 }
 
-/* Donaciones.html */
+/* Sucursales.html */
 iframe {
     width: 600px; height: 400px;
     margin-right: 10px;
@@ -103,8 +104,7 @@ iframe {
 
 
 
-/* Animales e index.html */
-
+/* Animales - index.html */
 .presentacion h3{
     margin-left: 20px;
 }
@@ -148,7 +148,7 @@ iframe {
     margin-bottom: 120px;
 }
 
-/* El último gato de todos SIEMPRE va a tener que tener un margin-bottom de 120 PX. */
+/* La última ID SIEMPRE va a tener que tener un margin-bottom de 120 PX. */
 
 .textoizq{
     text-align: left;
@@ -166,6 +166,8 @@ iframe {
     display: none;
 }
 
+
+
 /* Nosotros.html */
 .nosotros img {
     width: 500px; height: 500px;
@@ -181,11 +183,14 @@ iframe {
 
 /* Contacto.html */
 
+/*Lo voy a hacer con Bootstrap*/
 
 /*Terminan los bodys*/
 
 
 /*Empieza el footer*/
+
+/*Versión alternativa para la vista mobile, tiene que quedar si o si en display none para que no rompa*/
 .redesmobile{
     display: none;
 }
@@ -238,7 +243,7 @@ footer {
 
 /* Termina el footer */
 
-/*Menú Hamburger para mobile*/
+/*Base del menú Hamburger para mobile*/
 
 .hambugermobile{
     display: none;
@@ -319,7 +324,7 @@ footer {
     transform: rotate(-405deg);
   }
 
-/* Menú responsive a partir de los 1023PX*/
+/* El menú hamburger aparece a partir de los 1023PX*/
 
 @media (max-width: 1023px) {
     .navegaciondesktop{
