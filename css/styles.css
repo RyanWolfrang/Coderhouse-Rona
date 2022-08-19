@@ -333,8 +333,11 @@ footer {
 /* El menú hamburger aparece a partir de los 1023PX*/
 
 @media (max-width: 1023px) {
-    .navegaciondesktop{
+    .navbar{
         display: none;
+    }
+    *, ::after, ::before {
+        box-sizing: unset;
     }
     .hambugermobile{
         display: block;
@@ -455,6 +458,12 @@ footer {
         footer{
             position: fixed;
         }
+        h1{
+            font-size: 35px;
+        }
+        h3{
+            font-size: large;
+        }
         .sucursalesfooter{
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
@@ -495,6 +504,12 @@ footer {
         }
         nav{
             width: 20px; height: 20px;
+        }
+        h1{
+            font-size: 35px;
+        }
+        h3{
+            font-size: large;
         }
         .sucursalesfooter{
             grid-template-rows: 1fr;
@@ -541,6 +556,7 @@ footer {
         }
         .redesmobile a{
             border: 2px solid #333;
+            width: 32px; height: 30px;
         }
         .redesmobile a:hover{
             transform: scale(1.2);
@@ -569,6 +585,12 @@ footer {
             margin-top:77px;
             width: 78vh;
         }
+        h1{
+            font-size: 30px;
+        }
+        h3{
+            font-size: medium;
+        }  
         .columnas {
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;
@@ -657,6 +679,7 @@ footer {
         }
         .redesmobile a{
             border: 2px solid #333;
+            width: 26px; height: 26px;
         }
         .redesmobile a:hover{
             transform: scale(1.1);
@@ -684,7 +707,13 @@ footer {
         }
         .presentacion{
             padding-right: 13px;
-        }        
+        } 
+        h1{
+            font-size: 30px;
+        }
+        h3{
+            font-size: medium;
+        }       
         body{
             font-size: small;
         }
@@ -777,20 +806,19 @@ footer {
             display: none;
         }
         .redesmobile{
-            padding-left: 47px;
-            padding-right: 11px;
+            padding-left: 25px;
+            padding-right: 25px;
             display: flex;
             text-decoration:none;
         }
         .redesmobile a{
             border: 2px solid #333;
+            margin-left: 4px;
+            width: 24px; height: 25px;
         }
         .redesmobile a:hover{
             transform: scale(1.2);
             transition: 1s;
-        }
-        .arribafooter{
-            padding-bottom: 6px;
         }
         .arribafooter p{
             padding-right: 10px;
