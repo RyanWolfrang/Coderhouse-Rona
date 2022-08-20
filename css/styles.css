@@ -192,7 +192,20 @@ iframe {
 
 /* Contacto.html */
 
-/*Lo voy a hacer con Bootstrap*/
+form h4{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.redescontacto{
+    padding-left: 25px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 
 /*Terminan los bodys*/
 
@@ -239,7 +252,7 @@ footer {
 }
 .arribafooter p {
     font-family: 'Gotham Book', sans-serif;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .sucursalesfooter{
     margin-top: 5px;
@@ -467,6 +480,10 @@ footer {
         h3{
             font-size: large;
         }
+        .form-control{
+            margin-left: 10px;
+            width: 95%;
+        }
         .sucursalesfooter{
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
@@ -513,6 +530,10 @@ footer {
         }
         h3{
             font-size: large;
+        }
+        .form-control{
+            margin-left: 14px;
+            width: 93%;
         }
         .sucursalesfooter{
             grid-template-rows: 1fr;
@@ -580,6 +601,10 @@ footer {
         }
         .sucur2, .sucur3{
             display: none;
+        }
+        .form-control{
+            margin-left: 14px;
+            width: 90%;
         }
 
         /* Si se hacen cambios al width, hacerlo con vh. Por alguna razón
@@ -744,6 +769,10 @@ footer {
         }
         .sucursalmendoza{
             padding-top: 10px;
+        }
+        .form-control{
+            margin-left: 10px;
+            width: 87%;
         }
 
         /* Plantilla para número impar */
