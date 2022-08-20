@@ -101,7 +101,6 @@ iframe {
 }
 .sucursales h3{
     text-align: center;
-    padding-bottom: 20px;
 }
 .ubicacion h2 {
     text-align: center;
@@ -176,6 +175,7 @@ iframe {
 
 /* Nosotros.html */
 .nosotros img {
+    transform: scale(1) !important;
     width: 500px; height: 500px;
     display: block;
     margin-top: 50px;
@@ -185,6 +185,9 @@ iframe {
 .nosotros h4{
     margin-top: 25px;
     text-align: center;
+}
+.carousel-control-prev-icon{
+    margin-left: 260px;
 }
 
 /* Contacto.html */
