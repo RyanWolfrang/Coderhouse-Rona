@@ -13,13 +13,7 @@ p{
 /* Empieza el header */
 
 
-.navegaciondesktop{
-    padding-top: 20px;
-    display: inline-flex;
-    background: rgb(235,220,203);
-    background: linear-gradient(90deg, rgba(235,220,203,1) 14%, rgba(195,186,170,1) 53%, rgba(210,187,160,1) 91%);
-    width: 100%;
-}
+
 header img {
     width: 60px;
     height: 50px;
@@ -49,11 +43,7 @@ header a {
 ul {
     margin-left: 120px;
 }
-/* li {
-    list-style: none;
-    margin: 10px 0px 0px 0px;
-    border: 2px solid #A68C6D;
-} */
+
 nav {
     background: rgb(235,220,203);
     background: linear-gradient(90deg, rgba(235,220,203,1) 14%, rgba(195,186,170,1) 53%, rgba(210,187,160,1) 91%);
@@ -439,6 +429,12 @@ footer {
         .columnas{
             padding-bottom: 50px;
         }
+        .carousel-caption{
+            display: none !important;
+        }
+        .carousel-inner{
+            margin-bottom: 300px;
+        }
   }
 
     @media only screen and (min-width: 1024px) and (max-width: 1359px) {
@@ -468,6 +464,12 @@ footer {
         .columnas{
             padding-bottom: 150px;
         }
+        .carousel-caption{
+            display: none !important;
+        }
+        .carousel-inner{
+            margin-bottom: 200px;
+        }
     }
 
     @media only screen and (min-width: 768px) and (max-width:1023px) {
@@ -496,6 +498,12 @@ footer {
         }
         #lena {
             padding-bottom: 160px;
+        }
+        .carousel-caption{
+            display: none !important;
+        }
+        .carousel-inner{
+            margin-bottom: 200px;
         }
         iframe {
             width: 480px; height: 300px;
@@ -531,6 +539,12 @@ footer {
         h3{
             font-size: large;
         }
+        .carousel-caption{
+            display: none !important;
+        }
+        .carousel-inner{
+            margin-bottom: 150px;
+        }
         .form-control{
             margin-left: 14px;
             width: 93%;
@@ -550,6 +564,9 @@ footer {
         }
         .columnas img {
             width: 300px; height: 250px;
+        }
+        .nosotros img{
+            width: 400px; height: 300px;
         }
         iframe {
             width: 480px; height: 300px;
@@ -605,6 +622,15 @@ footer {
         .form-control{
             margin-left: 14px;
             width: 90%;
+        }
+        .carousel-caption{
+            display: none !important;
+        }
+        .carousel-inner{
+            margin-bottom: 140px;
+        }
+        .nosotros img{
+            width: 250px; height: 300px;
         }
 
         /* Si se hacen cambios al width, hacerlo con vh. Por alguna razón
@@ -750,6 +776,15 @@ footer {
         }
         #lena {
             display: block;
+        }
+        .carousel-caption{
+            display: none !important;
+        }
+        .carousel-inner{
+            margin-bottom: 150px;
+        }
+        .nosotros img{
+            width: 250px; height: 300px;
         }
         iframe {
             width: 300px; height: 200px;

@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* ETIQUETA GENERAL */
+* {
+  font-family: "Gotham", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Para que el footer no rompa con la implementación de bootstrap, este margin 0 tiene que estar si o si*/
+p {
+  margin-bottom: 0;
+}
+
+/*Empiezan las etiquetas para el header*/
+header img {
+  width: 60px;
+  height: 50px;
+  margin-left: 7px;
+}
+header h1 {
+  font-family: "Gotham Black", sans-serif;
+  display: inline-flex;
+  position: absolute;
+  margin-left: 7px;
+}
+header span {
+  font-family: "Gotham Black", sans-serif;
+  color: #D81F02;
+}
+header a {
+  font-family: "Gotham Light", sans-serif;
+  color: #333;
+  margin-top: 5px;
+  font-size: 25px;
+  text-decoration: none;
+}
+header a:hover {
+  background-color: #A68C6D;
+  transition: 0, 8s;
+}
+
+ul {
+  margin-left: 120px;
+}
+
+nav {
+  background: rgb(235, 220, 203);
+  background: linear-gradient(90deg, rgb(235, 220, 203) 14%, rgb(195, 186, 170) 53%, rgb(210, 187, 160) 91%);
+}
+
+/*Empiezan las etiquetas generales para los bodys*/
+body {
+  line-height: 1.3;
+  display: inline;
+  background-color: #9F7E69;
+}
+body h2 {
+  text-align: center;
+}
+body h3 {
+  text-align: left;
+}
+body img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Sucursales.html */
+iframe {
+  width: 600px;
+  height: 400px;
+  margin-right: 10px;
+}
+
+.sucursales {
+  margin-top: 25px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  margin-left: 10px;
+}
+.sucursales h3 {
+  text-align: center;
+}
+
+.ubicacion h2 {
+  text-align: center;
+  margin: 30px 0px 50px 0px;
+}
+
+/* Index.html */
+.presentacion h3 {
+  margin-left: 20px;
+}
+
+/* Animales.html */
+/* Gato con la foto en la izq. */
+#lena {
+  margin-top: 20px;
+  padding-left: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  border-bottom: 2px solid #333;
+}
+
+/* Gato con la foto en la der. */
+#roger {
+  padding-bottom: 18px;
+  padding-right: 20px;
+  display: flex;
+  border-bottom: 2px solid #333;
+}
+
+#killi {
+  padding-bottom: 18px;
+  padding-left: 18px;
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+#ganga {
+  padding-bottom: 18px;
+  padding-right: 20px;
+  display: flex;
+  border-bottom: 2px solid black;
+  margin-bottom: 120px;
+}
+
+/* La última ID SIEMPRE va a tener que tener un margin-bottom de 120 PX. */
+.textoizq {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.textoder {
+  text-align: left;
+  margin-left: 20px;
+}
+
+/* Etiquetas compartidas entre Index e Animales */
+.columnas {
+  font-size: 20px;
+  text-shadow: 1px 1px 10px white;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.columnas img {
+  width: 350px;
+  height: 300px;
+}
+
+.imgmobile {
+  display: none;
+}
+
+/* Nosotros.html */
+.nosotros img {
+  transform: scale(1) !important;
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nosotros h4 {
+  margin-top: 25px;
+  text-align: center;
+}/*# sourceMappingURL=estilos.css.map */
