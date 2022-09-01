@@ -6,6 +6,8 @@
   padding: 0;
 }
 
+/* Gato con la foto en la izq. */
+/* Gato con la foto en la der. */
 /* Para que el footer no rompa con la implementación de bootstrap, este margin 0 tiene que estar si o si*/
 p {
   margin-bottom: 0;
@@ -95,7 +97,6 @@ iframe {
 }
 
 /* Animales.html */
-/* Gato con la foto en la izq. */
 #lena {
   margin-top: 20px;
   padding-left: 18px;
@@ -104,7 +105,6 @@ iframe {
   border-bottom: 2px solid #333;
 }
 
-/* Gato con la foto en la der. */
 #roger {
   padding-bottom: 18px;
   padding-right: 20px;
@@ -113,20 +113,19 @@ iframe {
 }
 
 #killi {
-  padding-bottom: 18px;
   padding-left: 18px;
+  padding-bottom: 18px;
   display: flex;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #333;
 }
 
 #ganga {
   padding-bottom: 18px;
   padding-right: 20px;
   display: flex;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #333;
 }
 
-/* Dependiendo de cual sea la última ID, hay que cambiarle el # a este if para el margin bottom */
 .textoizq {
   text-align: left;
   margin-right: 20px;
