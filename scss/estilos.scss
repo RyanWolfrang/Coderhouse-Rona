@@ -163,14 +163,16 @@ iframe {
     @include gato-der;
 }
 
-.textoizq{
+.textos{
     text-align: left;
-    margin-right: 20px;
     margin-left: 20px;
 }
+.textoizq{
+    @extend .textos;
+    margin-right: 20px;
+}
 .textoder{
-    text-align: left;
-    margin-left: 20px;
+    @extend .textos
 }
 
 
