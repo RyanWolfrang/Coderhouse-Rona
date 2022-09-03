@@ -126,15 +126,13 @@ iframe {
   border-bottom: 2px solid #333;
 }
 
-.textoizq {
+.textos, .textoder, .textoizq {
   text-align: left;
-  margin-right: 20px;
   margin-left: 20px;
 }
 
-.textoder {
-  text-align: left;
-  margin-left: 20px;
+.textoizq {
+  margin-right: 20px;
 }
 
 /* Etiquetas compartidas entre Index e Animales */
@@ -166,9 +164,10 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
-.nosotros h4 {
+.nosotros h3 {
   margin-top: 25px;
-  text-align: center;
+  margin-left: 20px;
+  text-align: left;
 }
 
 /* Contacto.html */
