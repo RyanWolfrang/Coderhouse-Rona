@@ -8,12 +8,11 @@
 
 /* Gato con la foto en la izq. */
 /* Gato con la foto en la der. */
-/* Para que el footer no rompa con la implementación de bootstrap, este margin 0 tiene que estar si o si*/
 p {
   margin-bottom: 0;
 }
 
-/*Empiezan las etiquetas para el header*/
+/*Header*/
 header img {
   width: 60px;
   height: 50px;
@@ -50,7 +49,7 @@ nav {
   background: linear-gradient(90deg, rgb(235, 220, 203) 14%, rgb(195, 186, 170) 53%, rgb(210, 187, 160) 91%);
 }
 
-/*Empiezan las etiquetas generales para los bodys*/
+/* Etiquetas generales */
 body {
   line-height: 1.3;
   display: inline;
@@ -98,6 +97,15 @@ iframe {
 }
 
 /* Animales.html */
+.textos, .textoder, .textoizq {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.textoizq {
+  margin-right: 20px;
+}
+
 #lena {
   margin-top: 20px;
   padding-left: 18px;
@@ -127,17 +135,9 @@ iframe {
   border-bottom: 2px solid #333;
 }
 
-.textos, .textoder, .textoizq {
-  text-align: left;
-  margin-left: 20px;
-}
-
-.textoizq {
-  margin-right: 20px;
-}
-
 /* Etiquetas compartidas entre Index e Animales */
 .columnas {
+  padding-bottom: 120px;
   font-size: 20px;
   text-shadow: 1px 1px 10px white;
   display: grid;
@@ -178,7 +178,7 @@ form h4 {
   padding-bottom: 10px;
 }
 
-/* Empieza el footer*/
+/* Footer */
 .redesmobile {
   display: none;
 }
@@ -216,9 +216,6 @@ footer {
   display: flex;
   text-decoration: none;
 }
-.redes a {
-  border: 2px solid #333;
-}
 .redes a:hover {
   transform: scale(1.2);
   transition: 1s;
@@ -232,7 +229,7 @@ footer {
   text-align: center;
 }
 
-/* Base del menú hamburger para celulares */
+/* Base del menú hamburger */
 .hambugermobile {
   display: none;
 }
@@ -401,7 +398,7 @@ footer {
     padding-top: 10px;
   }
   .columnas {
-    padding-bottom: 50px;
+    padding-bottom: 120px;
   }
   .carousel-caption {
     display: none !important;
@@ -455,6 +452,9 @@ footer {
   h3 {
     font-size: large;
   }
+  form {
+    padding-bottom: 160px;
+  }
   .form-control {
     margin-left: 10px;
     width: 95%;
@@ -469,8 +469,8 @@ footer {
   .menu {
     width: 98.9%;
   }
-  #lena {
-    padding-bottom: 160px;
+  .columnas {
+    padding-bottom: 180px;
   }
   .carousel-caption {
     display: none !important;
@@ -501,7 +501,7 @@ footer {
 }
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   footer {
-    height: 140px;
+    height: 150px;
   }
   nav {
     width: 20px;
@@ -519,6 +519,9 @@ footer {
   .carousel-inner {
     margin-bottom: 150px;
   }
+  form {
+    padding-bottom: 160px;
+  }
   .form-control {
     margin-left: 14px;
     width: 93%;
@@ -533,8 +536,8 @@ footer {
   .menu > li {
     width: 97%;
   }
-  .textoder {
-    padding-bottom: 120px;
+  .columnas {
+    padding-bottom: 100px;
   }
   .columnas img {
     width: 300px;
@@ -573,9 +576,9 @@ footer {
     text-decoration: none;
   }
   .redesmobile a {
-    border: 2px solid #333;
+    margin-left: 4px;
     width: 32px;
-    height: 30px;
+    height: 10px;
   }
   .redesmobile a:hover {
     transform: scale(1.2);
@@ -587,7 +590,7 @@ footer {
     width: 100%;
   }
   footer {
-    height: 120px;
+    height: 160px;
   }
   .sucursalesfooter {
     grid-template-rows: 1fr;
@@ -595,6 +598,9 @@ footer {
   }
   .sucur2, .sucur3 {
     display: none;
+  }
+  form {
+    padding-bottom: 190px;
   }
   .form-control {
     margin-left: 14px;
@@ -614,7 +620,7 @@ footer {
   conocida solo por css rompe el footer con px*/
   .menu {
     margin-top: 77px;
-    width: 78vh;
+    width: 100%;
   }
   h1 {
     font-size: 30px;
@@ -623,8 +629,12 @@ footer {
     font-size: medium;
   }
   .columnas {
+    padding-bottom: 100px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+  }
+  .columnas h3 {
+    font-size: 20px;
   }
   .columnas img {
     display: block;
@@ -658,7 +668,6 @@ footer {
   .textoder, .textoizq {
     padding-right: 10px;
   }
-  /* Posible @EACH para todos los animales*/
   /* Plantilla para número impar */
   #lena {
     display: block;
@@ -710,7 +719,7 @@ footer {
     text-decoration: none;
   }
   .redesmobile a {
-    border: 2px solid #333;
+    margin-right: 8px;
     width: 26px;
     height: 26px;
   }
@@ -737,8 +746,19 @@ footer {
   .presentacion {
     padding-right: 13px;
   }
+  li a {
+    margin-top: 2px;
+    color: white;
+  }
+  .menu {
+    margin-top: 70px;
+    width: 98%;
+  }
   h1 {
     font-size: 30px;
+  }
+  .ubicacion h2 {
+    font-size: x-large;
   }
   h3 {
     font-size: medium;
@@ -748,9 +768,6 @@ footer {
   }
   .columnas {
     padding-bottom: 120px;
-  }
-  #lena {
-    display: block;
   }
   .carousel-caption {
     display: none !important;
@@ -782,16 +799,19 @@ footer {
   .sucursalmendoza {
     padding-top: 10px;
   }
+  form {
+    padding-bottom: 150px;
+  }
   .form-control {
     margin-left: 10px;
     width: 87%;
   }
   /* Plantilla para número impar */
-  /* Otra posibilidad de @EACH */
   #lena {
     display: block;
   }
   #lena img {
+    margin-bottom: 20px;
     padding-left: 13px;
     width: 260px;
     height: 250px;
@@ -801,6 +821,7 @@ footer {
     display: block;
   }
   #roger img {
+    margin-top: 20px;
     padding-left: 30px;
     width: 260px;
     height: 250px;
@@ -809,6 +830,7 @@ footer {
     display: block;
   }
   #killi img {
+    margin-bottom: 20px;
     padding-left: 13px;
     width: 260px;
     height: 250px;
@@ -817,6 +839,7 @@ footer {
     display: block;
   }
   #ganga img {
+    margin-top: 20px;
     padding-left: 30px;
     width: 260px;
     height: 250px;
@@ -834,7 +857,6 @@ footer {
     text-decoration: none;
   }
   .redesmobile a {
-    border: 2px solid #333;
     margin-left: 4px;
     width: 24px;
     height: 25px;

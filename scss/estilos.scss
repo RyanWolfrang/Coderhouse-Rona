@@ -2,10 +2,7 @@ $fuenteprin: 'Gotham', sans-serif;
 
 $fuenteheader: 'Gotham Black', sans-serif;
 
-$fuenteheadera: 'Gotham Light', sans-serif;
-
-$colorbody: #9F7E69;
-
+$fuenteheaderlinks: 'Gotham Light', sans-serif;
 
 /* ETIQUETA GENERAL */
 *{
@@ -37,14 +34,11 @@ $colores: (
     border-bottom: 2px solid #333;
 }
 
-
-/* Para que el footer no rompa con la implementación de bootstrap, este margin 0 tiene que estar si o si*/
-
 p{
     margin-bottom: 0;
 }
 
-/*Empiezan las etiquetas para el header*/
+/*Header*/
 
 header{
 
@@ -67,7 +61,7 @@ header{
     }
 
     a{
-        font-family: $fuenteheadera;
+        font-family: $fuenteheaderlinks;
         color: #333;
         margin-top: 5px;
         font-size: 25px;
@@ -89,7 +83,7 @@ nav{
     background: linear-gradient(90deg, rgba(235,220,203,1) 14%, rgba(195,186,170,1) 53%, rgba(210,187,160,1) 91%);
 }
 
-/*Empiezan las etiquetas generales para los bodys*/
+/* Etiquetas generales */
 
 body{
     line-height: 1.3;
@@ -147,6 +141,18 @@ iframe {
 
 /* Animales.html */
 
+.textos{
+    text-align: left;
+    margin-left: 20px;
+}
+.textoizq{
+    @extend .textos;
+    margin-right: 20px;
+}
+.textoder{
+    @extend .textos
+}
+
 #lena{
     margin-top: 20px;
     @include gato-izq;
@@ -164,22 +170,14 @@ iframe {
     @include gato-der;
 }
 
-.textos{
-    text-align: left;
-    margin-left: 20px;
-}
-.textoizq{
-    @extend .textos;
-    margin-right: 20px;
-}
-.textoder{
-    @extend .textos
-}
+
 
 
 /* Etiquetas compartidas entre Index e Animales */
 
+
 .columnas{
+    padding-bottom: 120px;
     font-size: 20px;
     text-shadow:
     1px 1px 10px #ffff;
@@ -188,6 +186,7 @@ iframe {
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
+
 .columnas img {
     width: 350px; height: 300px;
 }
@@ -223,7 +222,7 @@ form{
     }
 }
 
-/* Empieza el footer*/
+/* Footer */
 
 .redesmobile{
     display: none;
@@ -268,10 +267,6 @@ footer {
     display: flex;
     text-decoration:none;
 
-    a{
-        border: 2px solid #333;
-    }
-
     a:hover{
         transform: scale(1.2);
         transition: 1s;
@@ -287,7 +282,7 @@ footer {
     text-align: center;
 }
 
-/* Base del menú hamburger para celulares */
+/* Base del menú hamburger */
 
 .hambugermobile{
     display: none;
@@ -384,6 +379,7 @@ footer {
                 padding-top: 5px;
                 color: #222;
             }
+
         }
         .menu-button-container {
             left: 0;
@@ -471,7 +467,7 @@ footer {
             padding-top: 10px;
         }
         .columnas{
-            padding-bottom: 50px;
+            padding-bottom: 120px;
         }
         .carousel-caption{
             display: none !important;
@@ -528,6 +524,9 @@ footer {
         h3{
             font-size: large;
         }
+        form{
+            padding-bottom: 160px;
+        }
         .form-control{
             margin-left: 10px;
             width: 95%;
@@ -542,8 +541,8 @@ footer {
         .menu{
             width: 98.9%;
         }
-        #lena {
-            padding-bottom: 160px;
+        .columnas{
+            padding-bottom: 180px;
         }
         .carousel-caption{
             display: none !important;
@@ -575,7 +574,7 @@ footer {
     @media only screen and (min-width:600px) and (max-width:767px) {
 
         footer{
-            height: 140px;
+            height: 150px;
         }
         nav{
             width: 20px; height: 20px;
@@ -592,6 +591,9 @@ footer {
         .carousel-inner{
             margin-bottom: 150px;
         }
+        form{
+            padding-bottom: 160px;
+        }
         .form-control{
             margin-left: 14px;
             width: 93%;
@@ -606,10 +608,8 @@ footer {
         .menu > li {
             width: 97%;
         }
-        .textoder {
-            padding-bottom: 120px;
-        }
         .columnas{
+            padding-bottom: 100px;
             img{
                 width: 300px; height: 250px;
             }
@@ -646,8 +646,8 @@ footer {
             display: flex;
             text-decoration:none;
             a{
-                border: 2px solid #333;
-                width: 32px; height: 30px;
+                margin-left: 4px;
+                width: 32px; height: 10px;
             }
             a:hover{
                 transform: scale(1.2);
@@ -661,7 +661,7 @@ footer {
                 width: 100%;
             }
             footer {
-                height: 120px;
+                height: 160px;
             }
             .sucursalesfooter{
                 grid-template-rows: 1fr;
@@ -669,6 +669,9 @@ footer {
             }
             .sucur2, .sucur3{
                 display: none;
+            }
+            form{
+                padding-bottom: 190px;
             }
             .form-control{
                 margin-left: 14px;
@@ -691,7 +694,7 @@ footer {
 
             .menu {
                 margin-top:77px;
-                width: 78vh;
+                width: 100%;
             }
             h1{
                 font-size: 30px;
@@ -700,8 +703,12 @@ footer {
                 font-size: medium;
             }  
             .columnas {
+                padding-bottom: 100px;
                 grid-template-rows: 1fr;
                 grid-template-columns: 1fr;
+                h3{
+                    font-size: 20px;
+                }
                 img{
                     display: block;
                 }
@@ -735,16 +742,18 @@ footer {
                 padding-right: 10px;
             }
 
-            /* Posible @EACH para todos los animales*/
-
+            @mixin gato-imagen{
+                padding-bottom: 20px;
+                padding-left: 17px;
+                width: 410px;
+                height: 350px;
+            }
             /* Plantilla para número impar */
+
             #lena {
                 display: block;
                 img{
-                    padding-bottom: 20px;
-                    padding-left: 17px;
-                    width: 410px;
-                    height: 350px;
+                    @include gato-imagen
                 }
             }
 
@@ -752,30 +761,21 @@ footer {
             #roger{
                 display: block;
                 img{
-                    padding-bottom: 20px;
-                    padding-left: 17px;
-                    width: 410px;
-                    height: 350px;
+                    @include gato-imagen
                 }
             }
 
             #killi {
                 display: block;
                 img{
-                    padding-bottom: 20px;
-                    padding-left: 17px;
-                    width: 410px;
-                    height: 350px;
+                    @include gato-imagen
                 }
             }
 
             #ganga{
                 display: block;
                 img{
-                    padding-bottom: 20px;
-                    padding-left: 17px;
-                    width: 410px;
-                    height: 350px;
+                    @include gato-imagen
                 }
             }
 
@@ -791,7 +791,7 @@ footer {
                 display: flex;
                 text-decoration:none;
                 a{
-                    border: 2px solid #333;
+                    margin-right: 8px;
                     width: 26px; height: 26px;
                 }
                 a:hover{
@@ -818,9 +818,24 @@ footer {
             }
             .presentacion{
                 padding-right: 13px;
-            } 
+            }
+            li {
+                a{
+                    margin-top: 2px;
+                    color: #ffff;
+                }
+            }
+            .menu {
+                margin-top: 70px;
+                width: 98%;
+            }
             h1{
                 font-size: 30px;
+            }
+            .ubicacion{
+                h2{
+                    font-size: x-large;
+                }
             }
             h3{
                 font-size: medium;
@@ -830,9 +845,6 @@ footer {
             }
             .columnas{
                 padding-bottom: 120px;
-            }
-            #lena {
-                display: block;
             }
             .carousel-caption{
                 display: none !important;
@@ -862,49 +874,55 @@ footer {
             .sucursalmendoza{
                 padding-top: 10px;
             }
+            form{
+                padding-bottom: 150px;
+            }
             .form-control{
                 margin-left: 10px;
                 width: 87%;
             }
-            
             /* Plantilla para número impar */
-            /* Otra posibilidad de @EACH */
-            
+            @mixin gatoarriba{
+                margin-bottom: 20px;
+                padding-left: 13px;
+                width: 260px;
+                height: 250px;
+            }
+
+            @mixin gatoabajo{
+                margin-top: 20px;
+                padding-left: 30px;
+                width: 260px;
+                height: 250px;
+            }
             #lena{
                 display: block;
                 img{
-                    padding-left: 13px;
-                    width: 260px;
-                    height: 250px;
+                    @include gatoarriba
                 }
             }
+
 
             /* Plantilla para número par */
 
             #roger{
                 display: block;
                 img{
-                    padding-left: 30px;
-                    width: 260px;
-                    height: 250px;
+                    @include gatoabajo
                 }
             }
 
             #killi{
                 display: block;
                 img{
-                    padding-left: 13px;
-                    width: 260px;
-                    height: 250px;
+                    @include gatoarriba
                 }
             }
 
             #ganga{
                 display: block;
                 img{
-                    padding-left: 30px;
-                    width: 260px;
-                    height: 250px;
+                    @include gatoabajo
                 }
             }
 
@@ -920,7 +938,6 @@ footer {
                 display: flex;
                 text-decoration:none;
                 a{
-                    border: 2px solid #333;
                     margin-left: 4px;
                     width: 24px; height: 25px;
                 }
