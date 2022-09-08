@@ -132,6 +132,16 @@ iframe {
 
 /* Index.html */
 
+.carousel-inner{
+        img{
+        transform: scale(1) !important;
+        width: 500px; height: 500px;
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 .presentacion{
     h3{
         text-align: center;
@@ -197,9 +207,12 @@ iframe {
 /* Nosotros.html */
 
 .nosotros{
+    h2{
+        margin-top: 10px;
+    }
     img{
         transform: scale(1) !important;
-        width: 500px; height: 500px;
+        width: 450px; height: 350px;
         display: block;
         margin-top: 50px;
         margin-left: auto;
