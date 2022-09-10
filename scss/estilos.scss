@@ -12,7 +12,7 @@ $fuenteheaderlinks: 'Gotham Light', sans-serif;
 }
 
 $colores: (
-    colorbody: #9F7E69,
+    colorbody: #ba957d,
     colorfooter: #F2EFC7,
 );
 
@@ -23,6 +23,9 @@ $colores: (
     padding-bottom: 18px;
     display: flex;
     border-bottom: 2px solid #333;
+        img{
+            box-shadow: 0 0 15px #222;
+        }
 }
 
 /* Gato con la foto en la der. */
@@ -32,6 +35,9 @@ $colores: (
     padding-right: 20px;
     display: flex;
     border-bottom: 2px solid #333;
+    img{
+        box-shadow: 0 0 15px #222;
+    }
 }
 
 p{
@@ -131,28 +137,47 @@ iframe {
 }
 
 /* Index.html */
-
+#carouselExampleIndicators{
+    h4{
+        margin-top: 40px;
+    }
+}
 .carousel-inner{
         img{
+        box-shadow: 0 0 15px #222;
         transform: scale(1) !important;
-        width: 500px; height: 500px;
+        width: 700px; height: 500px;
         display: block;
-        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
     }
 }
 .presentacion{
-    h3{
+    h3, h4{
         text-align: center;
         margin-left: 10px;
     }
+}
+/* Nosotros.html */
+
+.nosotros{
+    h2{
+        margin-top: 10px;
+    }    
+    h3{
+        margin-top: 15px;
+        margin-left: 20px;
+        padding-bottom: 50px;
+        text-align: left;
+    }
+
 }
 
 /* Animales.html */
 
 .textos{
-    text-align: left;
+    font-size: larger;
+    text-align: left !important;
     margin-left: 20px;
 }
 .textoizq{
@@ -164,7 +189,7 @@ iframe {
 }
 
 #lena{
-    margin-top: 20px;
+    padding-top: 20px;
     @include gato-izq;
 }
 
@@ -189,8 +214,6 @@ iframe {
 .columnas{
     padding-bottom: 120px;
     font-size: 20px;
-    text-shadow:
-    1px 1px 10px #ffff;
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
@@ -198,32 +221,13 @@ iframe {
 }
 
 .columnas img {
-    width: 350px; height: 300px;
+    width: 320px; height: 260px;
 }
 .imgmobile{
     display: none;
 }
 
-/* Nosotros.html */
 
-.nosotros{
-    h2{
-        margin-top: 10px;
-    }
-    img{
-        transform: scale(1) !important;
-        width: 450px; height: 350px;
-        display: block;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    h3{
-        margin-top: 25px;
-        margin-left: 20px;
-        text-align: left;
-    }
-}
 
 /* Contacto.html */
 

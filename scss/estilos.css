@@ -53,7 +53,7 @@ nav {
 body {
   line-height: 1.3;
   display: inline;
-  background-color: #9F7E69;
+  background-color: #ba957d;
 }
 body h2 {
   text-align: center;
@@ -91,24 +91,40 @@ iframe {
 }
 
 /* Index.html */
+#carouselExampleIndicators h4 {
+  margin-top: 40px;
+}
+
 .carousel-inner img {
+  box-shadow: 0 0 15px #222;
   transform: scale(1) !important;
-  width: 500px;
+  width: 700px;
   height: 500px;
   display: block;
-  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.presentacion h3 {
+.presentacion h3, .presentacion h4 {
   text-align: center;
   margin-left: 10px;
 }
 
+/* Nosotros.html */
+.nosotros h2 {
+  margin-top: 10px;
+}
+.nosotros h3 {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
 /* Animales.html */
 .textos, .textoder, .textoizq {
-  text-align: left;
+  font-size: larger;
+  text-align: left !important;
   margin-left: 20px;
 }
 
@@ -117,11 +133,14 @@ iframe {
 }
 
 #lena {
-  margin-top: 20px;
+  padding-top: 20px;
   padding-left: 18px;
   padding-bottom: 18px;
   display: flex;
   border-bottom: 2px solid #333;
+}
+#lena img {
+  box-shadow: 0 0 15px #222;
 }
 
 #roger {
@@ -130,12 +149,18 @@ iframe {
   display: flex;
   border-bottom: 2px solid #333;
 }
+#roger img {
+  box-shadow: 0 0 15px #222;
+}
 
 #killi {
   padding-left: 18px;
   padding-bottom: 18px;
   display: flex;
   border-bottom: 2px solid #333;
+}
+#killi img {
+  box-shadow: 0 0 15px #222;
 }
 
 #ganga {
@@ -144,12 +169,14 @@ iframe {
   display: flex;
   border-bottom: 2px solid #333;
 }
+#ganga img {
+  box-shadow: 0 0 15px #222;
+}
 
 /* Etiquetas compartidas entre Index e Animales */
 .columnas {
   padding-bottom: 120px;
   font-size: 20px;
-  text-shadow: 1px 1px 10px white;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -157,31 +184,12 @@ iframe {
 }
 
 .columnas img {
-  width: 350px;
-  height: 300px;
+  width: 320px;
+  height: 260px;
 }
 
 .imgmobile {
   display: none;
-}
-
-/* Nosotros.html */
-.nosotros h2 {
-  margin-top: 10px;
-}
-.nosotros img {
-  transform: scale(1) !important;
-  width: 450px;
-  height: 350px;
-  display: block;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.nosotros h3 {
-  margin-top: 25px;
-  margin-left: 20px;
-  text-align: left;
 }
 
 /* Contacto.html */
