@@ -197,6 +197,10 @@ iframe {
   padding: 0.93em 20px;
 }
 
+button span {
+  font-size: large;
+}
+
 .form-group {
   margin-bottom: 25px;
   margin-top: 30px;
