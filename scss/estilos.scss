@@ -138,6 +138,7 @@ iframe {
 }
 
 /* Index.html */
+
 #carouselExampleIndicators{
     h4{
         margin-top: 40px;
@@ -159,6 +160,7 @@ iframe {
     }
 }
 .presentacion{
+    padding-bottom: 180px;
     h3, h4{
         text-align: center;
         margin-left: 10px;
@@ -417,6 +419,7 @@ footer {
             display: flex;
         }
         .menu {
+            z-index:1;
             position: absolute;
             top: 0;
             margin-top: 80px;
@@ -464,23 +467,27 @@ footer {
     @media only screen and (min-width: 1360px) and (max-width: 1800px){
 
         .redes{
-
             h1{
                 margin-right: 35%;
             }
-
             p{
                 margin-top: 10px;
                 margin-left: 27%;
             }
         }
-
         #lena{
             img{
                 margin-bottom: 120px;
             }
         }
-
+        .presentacion{
+            padding-bottom: 0px;
+        }
+        .carousel-inner{
+            img{
+            width: 700px; height: 500px;
+            }
+        }
         iframe {
             width: 600px; height: 400px;
             margin-right: 10px;
@@ -500,9 +507,6 @@ footer {
         .columnas{
             padding-bottom: 120px;
         }
-        .carousel-caption{
-            display: none !important;
-        }
         .carousel-inner{
             margin-bottom: 300px;
         }
@@ -521,6 +525,17 @@ footer {
         iframe {
             width: 480px; height: 300px;
             margin-right: 10px;
+        }
+        .columnas{
+            margin-bottom: 20px;
+        }
+        .presentacion{
+            padding-bottom: 0px;
+        }
+        .carousel-inner{
+            img{
+            width: 600px; height: 450px;
+            }
         }
         .sucursales{
             margin-top: 25px;
@@ -553,7 +568,7 @@ footer {
             font-size: 35px;
         }
         h3{
-            font-size: large;
+            font-size: larger;
         }
         form{
             padding-bottom: 160px;
@@ -569,11 +584,22 @@ footer {
         .sucur3 {
             display: none;
         }
+        .presentacion{
+            padding-bottom: 0px;
+        }
+        .carousel-inner{
+            img{
+            width: 450px; height: 350px;
+            }
+        }
         .menu{
             width: 98.9%;
         }
         .columnas{
             padding-bottom: 180px;
+            img{
+                margin-top: 75px;
+            }
         }
         .carousel-caption{
             display: none !important;
@@ -614,13 +640,18 @@ footer {
             font-size: 35px;
         }
         h3{
-            font-size: large;
+            font-size: larger;
+        }
+        .presentacion{
+            padding-bottom: 0px;
+        }
+        .carousel-inner{
+            img{
+            width: 450px; height: 350px;
+            }
         }
         .carousel-caption{
             display: none !important;
-        }
-        .carousel-inner{
-            margin-bottom: 150px;
         }
         form{
             padding-bottom: 160px;
@@ -642,6 +673,7 @@ footer {
         .columnas{
             padding-bottom: 100px;
             img{
+                margin-top: 100px;
                 width: 300px; height: 250px;
             }
         }
@@ -708,11 +740,16 @@ footer {
                 margin-left: 14px;
                 width: 90%;
             }
-            .carousel-caption{
-                display: none !important;
+            .presentacion{
+                padding-bottom: 0px;
             }
             .carousel-inner{
-                margin-bottom: 140px;
+                img{
+                width: 350px; height: 300px;
+                }
+            }
+            .carousel-caption{
+                display: none !important;
             }
             .nosotros{
                 img{
@@ -731,7 +768,7 @@ footer {
                 font-size: 30px;
             }
             h3{
-                font-size: medium;
+                font-size: large;
             }  
             .columnas {
                 padding-bottom: 100px;
@@ -774,8 +811,8 @@ footer {
             }
 
             @mixin gato-imagen{
-                padding-bottom: 20px;
-                padding-left: 17px;
+                margin-bottom: 10px;
+                margin-left: 20px;
                 width: 410px;
                 height: 350px;
             }
@@ -808,11 +845,6 @@ footer {
                 img{
                     @include gato-imagen
                 }
-            }
-
-            .textoder {
-                margin-top: 20px;
-                padding-bottom: 100px;
             }
             .redes{
                 display: none;
@@ -868,8 +900,11 @@ footer {
                     font-size: x-large;
                 }
             }
+            p{
+                font-size: smaller;
+            }
             h3{
-                font-size: medium;
+                font-size: 20px;
             }       
             body{
                 font-size: small;
@@ -877,11 +912,15 @@ footer {
             .columnas{
                 padding-bottom: 120px;
             }
+
+            .carousel-inner{
+                margin-left: 10px;
+                img{
+                width: 300px; height: 250px;
+                }
+            }
             .carousel-caption{
                 display: none !important;
-            }
-            .carousel-inner{
-                margin-bottom: 150px;
             }
             .nosotros img{
                 width: 250px; height: 300px;
@@ -912,24 +951,30 @@ footer {
                 margin-left: 10px;
                 width: 87%;
             }
+            .imgmobile{
+                display: block;
+            }
+            .imgdesktop{
+                display: none;
+            }
             /* Plantilla para número impar */
-            @mixin gatoarriba{
+            @mixin gatoimpar{
                 margin-bottom: 20px;
-                padding-left: 13px;
+                margin-left: 13px;
                 width: 260px;
                 height: 250px;
             }
-
-            @mixin gatoabajo{
+            @mixin gatopar{
                 margin-top: 20px;
-                padding-left: 30px;
+                margin-bottom: 20px;
+                margin-left: 30px;
                 width: 260px;
                 height: 250px;
             }
             #lena{
                 display: block;
                 img{
-                    @include gatoarriba
+                    @include gatoimpar
                 }
             }
 
@@ -939,21 +984,21 @@ footer {
             #roger{
                 display: block;
                 img{
-                    @include gatoabajo
+                    @include gatopar
                 }
             }
 
             #killi{
                 display: block;
                 img{
-                    @include gatoarriba
+                    @include gatoimpar
                 }
             }
 
             #ganga{
                 display: block;
                 img{
-                    @include gatoabajo
+                    @include gatopar
                 }
             }
 
@@ -975,11 +1020,6 @@ footer {
                 a:hover{
                     transform: scale(1.2);
                     transition: 1s;
-                }
-            }
-            .arribafooter{
-                p{
-                    padding-right: 10px;
                 }
             }
             .sucursalesfooter{
