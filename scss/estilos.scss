@@ -475,11 +475,7 @@ footer {
                 margin-left: 27%;
             }
         }
-        #lena{
-            img{
-                margin-bottom: 120px;
-            }
-        }
+
         .presentacion{
             padding-bottom: 0px;
         }
@@ -505,7 +501,7 @@ footer {
             padding-top: 10px;
         }
         .columnas{
-            padding-bottom: 120px;
+            margin-bottom: 60px;
         }
         .carousel-inner{
             margin-bottom: 300px;
@@ -518,6 +514,10 @@ footer {
         .sucursalesfooter{
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
+        }
+        .form-group{
+            margin-left: 35px;
+            width: 900px;
         }
         .sucur3 {
             display: none;
@@ -571,11 +571,16 @@ footer {
             font-size: larger;
         }
         form{
-            padding-bottom: 160px;
+            padding-bottom: 180px;
         }
-        .form-control{
-            margin-left: 10px;
-            width: 95%;
+        button{
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        .form-group{
+            margin-bottom: -10px;
+            margin-left: 15px;
+            width: 700px;
         }
         .sucursalesfooter{
             grid-template-rows: 1fr;
@@ -654,11 +659,16 @@ footer {
             display: none !important;
         }
         form{
-            padding-bottom: 160px;
+            padding-bottom: 180px;
         }
-        .form-control{
-            margin-left: 14px;
-            width: 93%;
+        button{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .form-group{
+            margin-bottom: -10px;
+            margin-left: 20px;
+            width: 500px;
         }
         .sucursalesfooter{
             grid-template-rows: 1fr;
@@ -733,12 +743,21 @@ footer {
             .sucur2, .sucur3{
                 display: none;
             }
-            form{
-                padding-bottom: 190px;
+            .container{
+                width: auto;
             }
-            .form-control{
-                margin-left: 14px;
-                width: 90%;
+            form{
+                width: 400px;
+                padding-bottom: 180px;
+            }
+            button{
+                margin-left: 25px;
+                margin-top: 20px;
+            }
+            .form-group{
+                margin-bottom: -10px;
+                margin-left: 25px;
+                width: 400px;
             }
             .presentacion{
                 padding-bottom: 0px;
@@ -944,12 +963,21 @@ footer {
             .sucursalmendoza{
                 padding-top: 10px;
             }
-            form{
-                padding-bottom: 150px;
+            .container{
+                width: auto;
             }
-            .form-control{
-                margin-left: 10px;
-                width: 87%;
+            form{
+                width: 400px;
+                padding-bottom: 180px;
+            }
+            button{
+                margin-left: 25px;
+                margin-top: 20px;
+            }
+            .form-group{
+                margin-bottom: -10px;
+                margin-left: 25px;
+                width: 250px;
             }
             .imgmobile{
                 display: block;
