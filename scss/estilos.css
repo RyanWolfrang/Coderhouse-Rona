@@ -710,8 +710,6 @@ footer {
     width: 250px;
     height: 300px;
   }
-  /* Si se hacen cambios al width, hacerlo con vh. Por alguna razón
-  conocida solo por css rompe el footer con px*/
   .menu {
     margin-top: 77px;
     width: 100%;
